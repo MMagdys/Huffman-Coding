@@ -56,7 +56,7 @@ class HuffmanCompressor(object):
 
 			tree = HuffmanTree()
 			codes , self.encoded_tree = tree.huffman_coding(txt)
-
+			print(codes)
 			self.get_encoded_txt(txt, codes)
 
 		src.close()
