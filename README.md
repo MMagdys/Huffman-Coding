@@ -3,7 +3,7 @@ Python Implementation for Huffman Coding for file / directories
 compression and decompression
 
 ## Getting Started
-** Usage**
+**Usage**
 ```
 Python Huffman.py [<option>] [file/dir path]
 
