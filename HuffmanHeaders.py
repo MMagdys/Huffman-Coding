@@ -47,7 +47,7 @@ def ls_fd(dir_name):
 def file_header(full_filename):
 
 	filename , file_exten = filename_split(full_filename)
-
+	# print(filename)
 
 	header_arr = bytearray()
 
@@ -71,12 +71,7 @@ def file_header(full_filename):
 
 def filename_split(full_filename):
 
-	filename = full_filename.split(".")
-	file_exten = filename[1]
-	filename = filename[0]
+	filename, file_exten = os.path.splitext(full_filename)
 
 	return filename, file_exten
 
-
-
-# print(dir_header("folder1"))

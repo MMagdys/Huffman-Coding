@@ -3,7 +3,6 @@ from HuffmanCompressor import HuffmanCompressor
 from HuffmanDecompressor import HuffmanDecompressor
 
 
-
 def main():
 
 	parser = argparse.ArgumentParser(description = "HUffman Algorithm for Compression and Decompression",\
@@ -33,7 +32,6 @@ def main():
 		exec_time = huffman.decompress(args.decompress)
 
 		print("[+] Decompression finished in %.5f seconds"% exec_time )
-
 
 
 

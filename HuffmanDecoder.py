@@ -11,6 +11,19 @@ class HuffmanDecoder(object):
 
 	def build_tree(self, tree_bytes):
 
+		'''
+		tree_byte(bytesarray) -> root(TreeNode)
+
+		------------
+		This function Rebuild Huffman Tree from encoded 
+		tree bytes.
+
+		Building Algorthim
+		------------------
+		1 : Internal Node 
+		0 : Leaf Node
+		'''
+
 		ch = tree_bytes.pop(0)
 
 		if ch is None:
