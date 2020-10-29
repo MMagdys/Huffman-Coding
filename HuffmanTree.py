@@ -65,7 +65,7 @@ class HuffmanTree(object):
 
 		if root.left is None:
 			if code == "":
-				self.CODES[root.char] = 0 
+				self.CODES[root.char] = "0" 
 				return
 			self.CODES[root.char] = code
 			return
