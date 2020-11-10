@@ -122,8 +122,9 @@ class HuffmanDecompressor(object):
 		This function takes file name and extention to write 
 		the decompressed plain data in
 		'''
-		
-		with open(filename + file_exten, "w") as dest :
+
+		file_exten='.huffmandecoded'	
+		with open(filename + file_exten, "w", encoding='latin-1') as dest :
 
 			dest.write(''.join(self.pln_text))
 
