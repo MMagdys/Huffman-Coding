@@ -104,8 +104,6 @@ class HuffmanCompressor(object):
 			# print(codes)
 			self.get_encoded_txt(txt, codes)
 
-		src.close()
-
 		return self.encoded_arr(self.encoded_txt, self.encoded_tree, filename)
 
 
@@ -161,8 +159,6 @@ class HuffmanCompressor(object):
 
 		with open(output + ".huffman", "wb") as dest:
 			dest.write(self.compression_bytes)
-
-		dest.close()
 
 		t2 = time.time()
 
